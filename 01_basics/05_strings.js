@@ -16,3 +16,12 @@ console.log(gamename.indexOf('n'))
 console.log(gamename.substring(0,3))
 console.log(gamename.slice(-5,4))
 console.log(gamename.slice(1,3))
+// trim and replace
+
+const newStringOne='   san   '
+console.log(newStringOne)
+console.log(newStringOne.trim())
+
+const url='http://sanya.comhatbechauhan'
+console.log(url.replace('hatbe' ,'-'))
+console.log(gamename.split('a' ))
