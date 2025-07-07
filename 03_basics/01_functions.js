@@ -52,3 +52,32 @@ function loginUserMesssage(username){
 
 console.log(loginUserMesssage("sanya"))
 
+//
+
+function calculateCartPrice(...num1){ //..num1 is rest operstor becoz whatever mulptiple values we are passing it takes it all and makes them array
+ return num1
+}
+ console.log(calculateCartPrice(200,400,700))
+
+ // how to pass an obj to a function
+
+ const user={
+    name:'sany',
+    price:199
+ }
+
+ function handleObject(anyObj){
+    console.log (`user is ${anyObj.name} and price is${anyObj.price}`)
+ }
+ handleObject(user)
+ //
+
+ const myNewArray=[300,500,700,800]
+ function returnSecondValue(getArray){
+    return getArray[1]
+ }
+ console.log(returnSecondValue(myNewArray))
+
+ 
+
+
