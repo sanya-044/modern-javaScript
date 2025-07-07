@@ -1,6 +1,8 @@
 //const tinderUser=new Object () //singleton object
 //const tinderUser={}   // non single ton obj 
 
+const { jsx } = require("react/jsx-runtime")
+
 const tinderUser={}
 tinderUser.id='123abd'
 tinderUser.name='sanya'
@@ -31,5 +33,33 @@ console.log(Object.values(tinderUser)) // we took all values in form of array
 console.log(Object.entries(tinderUser)) 
 
 console.log(tinderUser.hasOwnProperty('isLoggedOut'))
+
+
+const course={
+    courseName:'js in hindi' ,
+    price:'99' ,
+    courseInstructor:'sanya'
+}
+
+const{courseInstructor:ins}=course  //way to print sanya also called de structuring of object
+console.log(ins)
+
+// const navbar= ({props.company}) =>{
+
+// }
+// navbar(company="sanya")
+
+
+//api concept
+// {
+//     'name':'shalu',
+//     'coursename':'js',            //this is json 
+//     'price': 'free'
+// }
+
+[
+    {},
+    {}
+]
 
 
