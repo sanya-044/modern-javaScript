@@ -25,10 +25,23 @@ SECOND CYCLE i.e execution phase
  step2- v2=7
  no work will be done inside function
  step3- addnum will make its own and separate execution context(imagine it like a box) in which there would be new variable environment+execution thread
-                           box
+                           box(nve+thread)
         |```````````````````````````````````````````````````|
      memory creation phase for add num                  execution phase for addnum
      v1=undefined                                       n1=9
      v2=undefined                                       n2=7
      total=undefined                                    total=16
                                                         //return total- total returns in global executional context
+  after work is done the sandox for first addnum call will be automatically deleted
+  
+ step4= again we are calling addnum for res2 then again it creates a sandbox weherein we have(nve+thread) 
+                             box(nve+thread)                                            
+        |````````````````````````````````````````````````````````|        
+  memory phase                                            execution phase
+     v1=undefined                                          n1=9
+     v2=undefined                                          n2=2
+     total=undefined                                       total=11
+                                                          //return total- total returns in global executional context
+it will also automaticallly delete after work is done
+
+                
