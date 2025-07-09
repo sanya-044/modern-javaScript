@@ -9,6 +9,6 @@ const user={
 }
 //console.log(typeof user.welcomeMessage())
  user.welcomeMessage()
-//  user.username='sam'
-//  user.welcomeMessage()
+ user.username='sam'
+ user.welcomeMessage()
  //console.log(this)
