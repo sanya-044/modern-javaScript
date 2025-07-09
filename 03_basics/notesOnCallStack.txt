@@ -1,0 +1,34 @@
+whenever we write a code there forms a global execution context.
+one more execution context we have thats function execution context.
+eval execution context(not much important)
+
+HOW JS CODES EXECUTE?
+it runs on two phases(memory creation phase/creation phase and execution phase)
+in memory creation phase , memory allocation happens whenever we declare variables and in execution phase it performs addition/sub/div
+code~ 
+// let v1=9
+// let v2=7
+// function addnum(n1,n2){
+//     let total=n1+n2return total
+// }
+// let res1=addnum(v1,v2)
+// let res2=addnum(9,2)
+
+FIRST CYCLE 
+ step1- first we have global execution and code runs from global execution
+ step2- memory phase(all variables are collected)first we have variables and undefined will be assigned to all variables first
+ step3- addnum-defination 
+ step4- it will take res1 and assigned undefined and res2=undefined (all step1 to 4 covers first cycle)
+
+SECOND CYCLE i.e execution phase
+ step1- v1=9
+ step2- v2=7
+ no work will be done inside function
+ step3- addnum will make its own and separate execution context(imagine it like a box) in which there would be new variable environment+execution thread
+                           box
+        |```````````````````````````````````````````````````|
+     memory creation phase for add num                  execution phase for addnum
+     v1=undefined                                       n1=9
+     v2=undefined                                       n2=7
+     total=undefined                                    total=16
+                                                        //return total- total returns in global executional context
