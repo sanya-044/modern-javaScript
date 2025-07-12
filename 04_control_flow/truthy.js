@@ -18,5 +18,19 @@ if(userEmail){  //here i have value userEmail no comparison nothing ,so this str
 const emptyObj={}
 if (Object.keys(emptyObj).length===0) {   //Object.keys(emptyObj) return array of objects
     console.log('obj is empty')
-    
 }
+
+//nullish aoalescing operator(??):null , undefined
+let val1;
+//val1=5?? 10 //assigns 5
+val1=null??10 //asigns 10
+val1=undefined??15 //assigns 10
+val1=null??10??20 //first value assigns thats 10
+console.log(val1);
+
+
+//ternary operator(small syntax of if else)
+   // condition ? true:false(syntax)
+
+   const iceteaprice=100
+   iceteaprice>=80? console.log('less than 80'): console.log("more than 80")
