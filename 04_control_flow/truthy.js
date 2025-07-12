@@ -20,11 +20,11 @@ if (Object.keys(emptyObj).length===0) {   //Object.keys(emptyObj) return array o
     console.log('obj is empty')
 }
 
-//nullish aoalescing operator(??):null , undefined
-let val1;
+//nullish aoalescing operator(??):null , undefined(its used to escape from null and undefined)
+let val1; 
 //val1=5?? 10 //assigns 5
 val1=null??10 //asigns 10
-val1=undefined??15 //assigns 10
+val1=undefined??15 //assigns 15
 val1=null??10??20 //first value assigns thats 10
 console.log(val1);
 
