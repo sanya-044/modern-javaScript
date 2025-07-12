@@ -61,3 +61,40 @@ const programming =['js', 'c' , 'ruby']
 for(const key in programming){     
     console.log(programming[key])
 }
+
+//for each loop
+const coding=['js', 'ruby','java']
+coding.forEach( function (item){
+    console.log(item);
+})
+
+//for each loop in arrow function
+coding.forEach( (item)=>{
+    console.log(item)
+})
+  
+//one more way
+coding.forEach((item, index, arr)=>{
+    console.log(item, index, arr)
+})
+
+
+//  objects in array
+const mycode=[
+    {
+        lang:'js',
+        langfile:'js'
+    },
+    {
+        lang:'java',
+        langfile:'java'
+    },
+    {
+        lang:'python',
+        langfile:'py'
+    },
+]
+
+mycode.forEach((item)=>{
+    console.log(item.langfile);
+})
