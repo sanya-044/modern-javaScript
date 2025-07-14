@@ -1,4 +1,4 @@
-const name='sanya'
+const name="sanya"
 const repo=50
 // console.log(name+repo+' value')   very old syntax . not recommended
 
