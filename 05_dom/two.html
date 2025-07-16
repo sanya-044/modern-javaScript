@@ -15,6 +15,13 @@
  <script>
     const y=document.querySelector('.parent')
     console.log(y)
+    console.log(y.children)
+    console.log(y.children[1].innerHTML);
+    for(let i=0;i<y.children.length;i++){
+      console.log(y.children[i].innerHTML)
+    }
+    y.children[1].style.color="orange"
+    console.log(y.firstElementChild)
     </script>
 </body>
 </html>
