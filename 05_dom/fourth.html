@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body style="background-color: black; color:white;">
+    <ul class="language">
+        <li>js</li>
+    </ul>
+ </body>
+ <script>
+  function addLanguage(langName){
+   const lii= document.createElement('li')
+   console.log(lii)
+   lii.innerHTML=`${langName}`
+    document.querySelector('.language').
+   appendChild(lii) //append travesreses the tree in docm , so not optimised
+  }
+   addLanguage('py')
+   addLanguage('typescript')
+   //
+   function addOptimizedLanguage(lang){
+    const lii=document.createElement('li')    //more optimized
+    lii.appendChild(document.createTextNode(lang))
+    document.querySelector('.language').appendChild(lii)
+   }
+   addOptimizedLanguage('golang')
+
+   //how to edit
+   const s=document.querySelector('li:nth-child(2)')
+   s.innerHTML='MY'  //py will get edited to MY
+
+
+ </script>
+ </html>
