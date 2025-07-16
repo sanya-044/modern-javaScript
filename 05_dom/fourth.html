@@ -32,6 +32,14 @@
    const s=document.querySelector('li:nth-child(2)')
    s.innerHTML='MY'  //py will get edited to MY
 
-//
+  //
+  const firstlang=document.querySelector('li:first-child')
+  firstlang.outerHTML='<li>ts</li>'
+
+  //remove
+  const lastlang=document.querySelector('li:last-child')
+  lastlang.remove()
+
+
  </script>
  </html>
