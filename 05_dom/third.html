@@ -13,5 +13,12 @@
    console.log(divv)
    divv.className='main'
    divv.id=Math.round(Math.random()*10+1)
+   divv.setAttribute('title', 'generate title')
+   divv.style.padding="12px"
+//    divv.innerText="sanya"
+//    divv.innerText='shalu' //inner text overide sanya to shalu , so not prefferable
+   const addText=document.createTextNode('san')
+   divv.appendChild(addText)
+   document.body.appendChild(divv)
 </script>
 </html>
