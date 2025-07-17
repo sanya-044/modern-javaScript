@@ -60,12 +60,20 @@
 
 
     //event propagation(true/false)
-    document.getElementById('trees').addEventListener('click', function(e){
+    document.getElementById('images').addEventListener('click', function(e){
         console.log('clicked inside the ul')
     })
     document.getElementById('nature').addEventListener('click', function(e){
         console.log('nature clicked')
+      //  e.stopPropagation() //to stop bubbling
     },false)
+
+    //
+    document.getElementById('google').addEventListener
+    ('click', function(e){
+        e.defaultPrevented()
+    }, false)
+
 
 
 </script>
