@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color: #414141; color:aliceblue">
+    <h2>amazing images</h2>
+    <div>
+    
+        
+        <ul>
+            <li><img width="200px" id="photoshop" 
+                src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg " alt="photoshop"></li>
+        
+        
+            <li><img width="200px" id="naturee" 
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.jpg " alt="photoshop"></li>
+        
+        
+            <li><img width="200px" id="travel" 
+                src="https://media.istockphoto.com/id/1550071750/photo/green-tea-tree-leaves-camellia-sinensis-in-organic-farm-sunlight-fresh-young-tender-bud.jpg?s=612x612&w=0&k=20&c=RC_xD5DY5qPH_hpqeOY1g1pM6bJgGJSssWYjVIvvoLw= "  alt="photoshop"></li>
+        
+        
+            <li><img width="200px" id="nature" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/250px-Image_created_with_a_mobile_phone.png " alt="photoshop"></li>
+        
+        
+            <li><img width="200px" id="trees" 
+                src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="photoshop"></li>
+        
+        
+        
+            <li><img width="200px" id="japan" 
+                src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE= " alt="" ></li>
+        
+
+            <li><a style="color:aliceblue;" href="https://google.com" id="google">Google</a></li>
+        
+        </ul>
+    
+    </div>
+</body>
+<script>
+    // document.getElementById('japan').onclick=function(){     not a good approach
+    //     alert('japan clicked')
+    // }
+
+    document.getElementById('japan').addEventListener('click')
+
+</script>
+</html>
