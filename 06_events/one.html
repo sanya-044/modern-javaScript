@@ -10,7 +10,7 @@
     <div>
     
         
-        <ul>
+        <ul id="images">
             <li><img width="200px" id="photoshop" 
                 src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg " alt="photoshop"></li>
         
@@ -56,7 +56,16 @@
         console.log(e);
     }, false)
 
-    //type, timestamp, defaultPrevented , target , toElement
+    //type, timestamp, defaultPrevented , target , toElement, srcElement, currentTarget,  clientX , clientY, OFFSET , scrrenX, screenY, ALT KEY , CTRL KEY, shiftkey, keycode
+
+
+    //event propagation(true/false)
+    document.getElementById('trees').addEventListener('click', function(e){
+        console.log('clicked inside the ul')
+    })
+    document.getElementById('nature').addEventListener('click', function(e){
+        console.log('nature clicked')
+    },false)
 
 
 </script>
