@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -71,8 +71,18 @@
     //
     document.getElementById('google').addEventListener
     ('click', function(e){
-        e.defaultPrevented()
+        e.preventDefault()
+        e.stopPropagation()
+        console.log('google clicked')
     }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.parentNode)
+        let remove=e.target.parentNode
+        remove.remove()
+        //remove.parentNode.removeChild(remove)
+
+    })
 
 
 
