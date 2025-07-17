@@ -47,7 +47,17 @@
     //     alert('japan clicked')
     // }
 
-    document.getElementById('japan').addEventListener('click')
+    // document.getElementById('japan').addEventListener('click', function(){
+    //     alert('japan clicked again')
+    // })
+
+    //event object
+    document.getElementById('japan').addEventListener('click', function(e){
+        console.log(e);
+    }, false)
+
+    //type, timestamp, defaultPrevented , target , toElement
+
 
 </script>
 </html>
