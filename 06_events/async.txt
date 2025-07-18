@@ -1,0 +1,32 @@
+                 js
+    |`````````````````````````````|
+synchronous                 single thread
+
+
+    execution context
+      |
+      |->execute one line of code at a time
+
+  |
+  |---->console log-->1
+  |                           each operation waits for the last one to complete before executing
+  |---->console log-->2
+  |
+  |  |```````````````````|         |```````````|
+     |call stack         |         |memory heap|
+     `````````````````````         `````````````
+
+
+
+BLOCKING CODE                 VS                       NON BLOCKING CODE
+|                                                             |
+blocks the flow of program                             does not block execution
+|                                                             |
+read file sync                                         read file async
+
+
+
+
+
+
+
