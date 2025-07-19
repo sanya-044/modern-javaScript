@@ -61,3 +61,37 @@ promiseFour.then((use)=>{
 }).finally(()=>console.log('the promise is either resolved or rejected'))
 
 
+
+//
+const promiseFive=new Promise(function(resolve, reject){
+    setTimeout(function(){
+      let error=false
+      if(!error){
+         resolve({user:'shala', age:20})
+      }else{
+         reject('shala went wrong')
+      }
+   },1000)
+})
+
+async function consumePromiseFive(){ //async await cant handle error directly.so better wrap it under try catch block
+   try{
+       const response= await promiseFive
+  console.log(response)
+   }catch (error){
+      console.log(error)
+   }
+}
+
+consumePromiseFive()
+
+
+
+//
+async function getAllUsers()
+{
+  const response=await fetch('any link you can provide')
+  const data=response.json()
+  console.log(data)
+}                                       //wrap it inside try catch block
+getAllUsers()
