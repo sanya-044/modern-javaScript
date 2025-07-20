@@ -5,7 +5,7 @@ accountCity="jaipur";
 let accountState;
 // accountId=2 not allowed to change
 accountEmail="hch"
-accountPassword="654"
+accountPassword="654";
 accountCity="bengaluru";
 console.log(accountId);
 console.table([accountId, accountEmail,accountPassword, accountCity, acccountState]);
