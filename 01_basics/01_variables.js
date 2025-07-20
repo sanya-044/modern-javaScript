@@ -3,7 +3,7 @@ let accountEmai="sanyachauhan453@gmail.com";
 let accountPassword="123";
 accountCity="jaipur";
 let accountState;
-// accountId=2 not allowed to change
+//accountId=2 not allowed to change
 accountEmail="hch";
 accountPassword="654";
 accountCity="bengaluru";
