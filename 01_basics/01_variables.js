@@ -1,7 +1,7 @@
 const accountId= 144553  //constant keyword . it locks the value 
 let accountEmai="sanyachauhan453@gmail.com"
 let accountPassword="123";
-accountCity="jaipur"
+accountCity="jaipur";
 let accountState;
 // accountId=2 not allowed to change
 accountEmail="hch"
