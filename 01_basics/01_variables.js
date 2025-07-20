@@ -8,7 +8,7 @@ accountEmail="hch"
 accountPassword="654"
 accountCity="bengaluru"
 console.log(accountId);
-console.table([accountId, accountEmail,accountPassword, accountCity, acccountState])
+console.table([accountId, accountEmail,accountPassword, accountCity, acccountState]);
 /*
 prefer not to use var 
 becuase of issue in block scope and functional scope
